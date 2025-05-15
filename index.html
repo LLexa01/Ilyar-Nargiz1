@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Свадьба Ильяра и Наргиз</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to bottom right, #fff0e6, #ffe6e1);
+      color: #3e2f2f;
+      overflow-x: hidden;
+      height: 100%;
+    }
+    .video-intro {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: black;
+      overflow: hidden;
+    }
+    .video-intro video {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      cursor: pointer;
+      display: block;
+    }
+    .content {
+      display: none;
+      animation: fadeIn 2s ease forwards;
+      padding-bottom: 60px;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    header {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 60px 20px 30px;
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.8em;
+      margin: 0;
+      color: #b46e4c;
+    }
+    header p {
+      font-size: 1.2em;
+      margin: 10px 0;
+    }
+    .countdown {
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-top: 10px;
+    }
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .photo img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 16px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+      margin: 20px 0;
+    }
+    .quote {
+      font-style: italic;
+      font-size: 1.2em;
+      margin: 30px auto;
+      max-width: 600px;
+    }
+    .about {
+      max-width: 500px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    .rsvp input,
+    .rsvp textarea {
+      width: 100%;
+      max-width: 300px;
+      padding: 12px;
+      margin: 10px auto;
+      display: block;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+    .rsvp button {
+      background: #b46e4c;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    footer {
+      background: #3e2f2f;
+      color: white;
+      padding: 30px 20px;
+    }
+    .details {
+      background: #f3e0d2;
+      padding: 30px 20px;
+      border-radius: 20px;
+      margin: 20px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="video-intro" id="video-intro">
+    <video
+      id="introVideo"
+      autoplay
+      muted
+      playsinline
+      preload="auto"
+      >
+      <source
+        src="https://drive.google.com/uc?export=download&id=126sQk4JoJhSOELo4lKILvzdb7apYVuJC"
+        type="video/mp4"
+      />
+      Ваш браузер не поддерживает видео.
+    </video>
+  </div>
+
+  <div class="content" id="main-content">
+    <header>
+      <h1>Ильяр & Наргиз</h1>
+      <p><strong>12 июля 2025</strong> — <em>г. Алматы, 16:00</em></p>
+      <p class="countdown" id="countdown"></p>
+    </header>
+
+    <section class="details">
+      <h2>Детали & Пожелания</h2>
+      <p>🎁 Подарки — в конверте, а добрые слова — в сердцах!</p>
+      <p>🌸 Не приносите цветы — ваша улыбка лучший букет.</p>
+      <p>
+        📍 Место: г. Алматы, Тайбагар 1
+        <br />
+        <a
+          href="https://2gis.kz/almaty/gallery/geo/70000001033228209/photoId/30258560229338519"
+          target="_blank"
+          >Посмотреть на карте</a
+        >
+      </p>
+      <p>📞 Вопросы? Обращайтесь к нашему организатору Саида: +7 (700) 0909109</p>
+    </section>
+
+    <section class="photo">
+      <img
+        src="https://photos.fife.usercontent.google.com/pw/AP1GczOl1yLe8J3ll9s6cU-d5NONMmpJTTEkLhwaRGdVdF48yCNmfUDgk7xr=w717-h956-s-no-gm?authuser=0"
+        alt="Фото пары 1"
+      />
+      <img
+        src="https://photos.fife.usercontent.google.com/pw/AP1GczOl1yLe8J3ll9s6cU-d5NONMmpJTTEkLhwaRGdVdF48yCNmfUDgk7xr=w717-h956-s-no-gm?authuser=0"
+        alt="Фото пары 2"
+      />
+    </section>
+
+    <section>
+      <h2>Наша история</h2>
+      <p class="about">
+        Случайная встреча обернулась чудом. Мы счастливы начать новую главу
+        жизни вместе с вами ❤️
+      </p>
+    </section>
+
+    <section class="quote">
+      <h2>"Любовь — это когда ты дома, даже если вы где-то далеко."</h2>
+    </section>
+
+    <section>
+      <h2>RSVP — Подтвердите участие</h2>
+      <form
+        class="rsvp"
+        action="mailto:vid-00@mail.ru"
+        method="POST"
+        enctype="text/plain"
+      >
+        <input type="text" name="Имя" placeholder="Ваше имя" required />
+        <input
+          type="email"
+          name="Контакт"
+          placeholder="Email или телефон"
+          required
+        />
+        <textarea name="Сообщение" placeholder="Ваше сообщение (по желанию)"></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
+
+    <footer>
+      <h3>Контакты</h3>
+      <p>
+        По вопросам пишите:
+        <a href="mailto:vid-00@mail.ru">vid-00@mail.ru</a>
+      </p>
+      <p>Или звоните: +7 (700) 260-46-56</p>
+    </footer>
+  </div>
+
+  <script>
+    // Отсчет до свадьбы
+    const weddingDate = new Date('2025-07-12T16:00:00').getTime();
+    const countdownEl = document.getElementById('countdown');
+
+    const updateCountdown = () => {
+      const now = new Date().getTime();
+      const diff = weddingDate - now;
+      if (diff < 0) {
+        countdownEl.innerText = 'Свадьба уже состоялась!';
+        return;
+      }
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor(
+        (diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      countdownEl.innerText = `${days} дней, ${hours} часов, ${minutes} минут`;
+    };
+
+    setInterval(updateCountdown, 60000);
+    updateCountdown();
+
+    // Видео и переход
+    const video = document.getElementById('introVideo');
+    const mainContent = document.getElementById('main-content');
+    const videoIntro = document.getElementById('video-intro');
+
+    // Стартуем с выключенным звуком, чтобы автозапуск сработал
+    video.muted = true;
+    video.play();
+
+    // Включение звука по клику
+    video.addEventListener('click', () => {
+      if (video.muted) {
+        video.muted = false;
+        video.play();
+      }
+    });
+
+    // Плавный переход после окончания видео
+    video.addEventListener('ended', () => {
+      videoIntro.style.transition = 'opacity 1s';
+      videoIntro.style.opacity = 0;
+      setTimeout(() => {
+        videoIntro.style.display = 'none';
+        mainContent.style.display = 'block';
+      }, 1000);
+    });
+  </script>
+</body>
+</html>
