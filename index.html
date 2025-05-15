@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Свадьба Ильяра и Наргиз</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to bottom right, #fff0e6, #ffe6e1);
+      color: #3e2f2f;
+      overflow-x: hidden;
+    }
+    .video-intro {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: black;
+    }
+    iframe#vimeo {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .content {
+      display: none;
+      animation: fadeIn 2s ease forwards;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    header {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 60px 20px 30px;
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.8em;
+      margin: 0;
+      color: #b46e4c;
+    }
+    header p {
+      font-size: 1.2em;
+      margin: 10px 0;
+    }
+    .countdown {
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-top: 10px;
+    }
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .photo img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 16px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+      margin: 20px 0;
+    }
+    .quote {
+      font-style: italic;
+      font-size: 1.2em;
+      margin: 30px auto;
+    }
+    .about {
+      max-width: 500px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    .rsvp input, .rsvp textarea {
+      width: 100%;
+      max-width: 300px;
+      padding: 12px;
+      margin: 10px auto;
+      display: block;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+    .rsvp button {
+      background: #b46e4c;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    footer {
+      background: #3e2f2f;
+      color: white;
+      padding: 30px 20px;
+    }
+    .details {
+      background: #f3e0d2;
+      padding: 30px 20px;
+      border-radius: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Видео -->
+  <div class="video-intro" id="video-intro">
+    <iframe id="vimeo" src="https://player.vimeo.com/video/1084793781?h=7200e901a3&autoplay=1&muted=0&title=0&byline=0&portrait=0&controls=0&background=1" allow="autoplay; fullscreen" allowfullscreen></iframe>
+  </div>
+
+  <!-- Основной контент -->
+  <div class="content" id="main-content">
+    <header>
+      <h1>Ильяр & Наргиз</h1>
+      <p><strong>12 июля 2025</strong> — <em>г. Алматы, 16:00</em></p>
+      <p class="countdown" id="countdown"></p>
+    </header>
+
+    <section class="photo">
+      <img src="https://photos.fife.usercontent.google.com/pw/AP1GczOl1yLe8J3ll9s6cU-d5NONMmpJTTEkLhwaRGdVdF48yCNmfUDgk7xr=w717-h956-s-no-gm" alt="Фото пары 1">
+      <img src="https://photos.fife.usercontent.google.com/pw/AP1GczOl1yLe8J3ll9s6cU-d5NONMmpJTTEkLhwaRGdVdF48yCNmfUDgk7xr=w717-h956-s-no-gm" alt="Фото пары 2">
+    </section>
+
+    <section>
+      <h2>Наша история</h2>
+      <p class="about">Случайная встреча обернулась чудом. Мы счастливы начать новую главу жизни вместе с вами ❤️</p>
+    </section>
+
+    <section class="details">
+      <h2>Детали & Пожелания</h2>
+      <p>🎁 Подарки — в конверте, а добрые слова — в сердцах!</p>
+      <p>🌸 Не приносите цветы — ваша улыбка лучший букет.</p>
+      <p>📍 Место: г. Алматы, Тайбагар 1 <br>
+        <a href="https://2gis.kz/almaty/gallery/geo/70000001033228209/photoId/30258560229338519" target="_blank">Посмотреть на карте</a>
+      </p>
+      <p>📞 Вопросы? Организатор Саида: +7 (700) 0909109</p>
+    </section>
+
+    <section class="quote">
+      <h2>"Любовь — это когда ты дома, даже если вы где-то далеко."</h2>
+    </section>
+
+    <section>
+      <h2>RSVP — Подтвердите участие</h2>
+      <form class="rsvp" action="mailto:vid-00@mail.ru" method="POST" enctype="text/plain">
+        <input type="text" name="Имя" placeholder="Ваше имя" required>
+        <input type="email" name="Контакт" placeholder="Email или телефон" required>
+        <textarea name="Сообщение" placeholder="Ваше сообщение (по желанию)"></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
+
+    <footer>
+      <h3>Контакты</h3>
+      <p>Пишите: <a href="mailto:vid-00@mail.ru">vid-00@mail.ru</a></p>
+      <p>Или звоните: +7 (700) 260-46-56</p>
+    </footer>
+  </div>
+
+  <!-- Скрипт -->
+  <script>
+    const countdownEl = document.getElementById("countdown");
+    const weddingDate = new Date("2025-07-12T16:00:00").getTime();
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const diff = weddingDate - now;
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      countdownEl.innerText = `${days} дней, ${hours} часов, ${minutes} минут`;
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 60000);
+
+    // Переход после окончания видео
+    const vimeoIframe = document.getElementById('vimeo');
+    const player = new Vimeo.Player(vimeoIframe);
+
+    player.on('ended', () => {
+      document.getElementById('video-intro').style.display = 'none';
+      document.getElementById('main-content').style.display = 'block';
+    });
+  </script>
+
+  <!-- Vimeo SDK -->
+  <script src="https://player.vimeo.com/api/player.js"></script>
+</body>
+</html>
